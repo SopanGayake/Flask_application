@@ -1,6 +1,8 @@
 import logging
 from waitress import serve
-from app import app  # Import the app object from app.py
+from app import create_app  # Import the create_app function
+
+app = create_app()  # Create the app instance
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
