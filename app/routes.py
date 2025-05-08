@@ -4,7 +4,7 @@ main = Blueprint('main', __name__)
 
 @main.route("/")
 def index_page():
-    # Render the index.html template
+    # Render the index.html template  9999
     return render_template("index.html")
 
 @main.route("/<path:subpath>")
